@@ -7,7 +7,7 @@ A real-time chat application built with Go, WebSockets, and Redis.
 - **Real-time messaging** via WebSockets
 - **Rooms** — join any room by name, rooms are created on demand
 - **Message history** — last 100 messages per room, delivered on join
-- **User presence** — live sidebar showing who's online
+- **User presence** — live members panel with colour-coded avatars showing who's online
 - **Horizontally scalable** — Redis pub/sub enables multiple server instances
 
 ## Architecture
@@ -24,7 +24,7 @@ Browser ←WebSocket→ Go Server ←Pub/Sub→ Redis
 - `room.go` — Per-room client set, Redis subscription, broadcasting
 - `redis.go` — Redis wrapper for pub/sub, message history, and presence
 - `models.go` — Message type definitions
-- `static/index.html` — Single-page chat UI
+- `static/index.html` — Single-page chat UI (dark theme, three-column layout, avatars, room switching)
 
 ## Prerequisites
 
