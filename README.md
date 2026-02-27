@@ -2,6 +2,10 @@
 
 A real-time chat application built with Go, WebSockets, and Redis.
 
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat&logo=redis&logoColor=white)
+![WebSockets](https://img.shields.io/badge/WebSockets-010101?style=flat&logo=socket.io&logoColor=white)
+
 ## Features
 
 - **Real-time messaging** via WebSockets
@@ -41,7 +45,7 @@ brew services start redis
 ## Running
 
 ```bash
-git clone https://github.com/linus/chatRoom.git
+git clone https://github.com/consiliorum/chatRoom.git
 cd chatRoom
 go run .
 ```
